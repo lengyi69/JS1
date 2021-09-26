@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,13 +9,13 @@
 </head>
 <body>
     
-     <label>Átlag</label>
+     <label>Átlag: </label>
       <input type="text" id="eredmeny" value="" />
-        
+     <hr />   
     <div id="tartalomalap">
         <form name="adatok">
             <input type="text" id="tantargy" name="tantargyak" placeholder="Tantárgy" onchange="hozzaad()" />
-            <select id="jegyek" onchange="szamol()">
+            <select id="jegyek" onchange="szamol(this)">
                 <option></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -30,7 +30,7 @@
     <div id="tartalom">
         <form name="adatok">
             <input type="text" id="tantargy" name="tantargyak" placeholder="Tantárgy" onchange="hozzaad()" />
-            <select id="jegyek" onchange="szamol()">
+            <select id="jegyek" onchange="szamol(this)">
                 <option></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
