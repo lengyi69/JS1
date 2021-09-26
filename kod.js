@@ -14,13 +14,13 @@ function hozzaad()
     masolat.style.display = "block";
    
 }
-function szamol()
+function szamol(szam)
 {
-    jegy =document.getElementById("jegyek").value*1;
+    jegy =szam.value*1;
 
     szamlalo++;
     ossz += jegy;
     
     var atlag = ossz / szamlalo;
-    document.getElementById("eredmeny").value =jegy;
+    document.getElementById("eredmeny").value =atlag;
 }
